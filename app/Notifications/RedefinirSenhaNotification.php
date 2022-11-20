@@ -46,9 +46,9 @@ class RedefinirSenhaNotification extends Notification
         $minutos = config('auth.passwords.' . config('auth.defaults.passwords') . '.expire');
         return (new MailMessage)
             ->subject('Atualização de senha')
-            ->line('Você está recebendo esse e-mail pois solicitou uma redefinição de senha')
+            ->line('Você está recebendo esse e-mail pois solicitou uma redefinição de senha.')
             ->action('Clique aqui para modificar a senha', $url)
-            ->line('O link para redefinição expira em '.$minutos. 'minutos.')
+            ->line('O link para redefinição expira em '.$minutos. ' minutos.')
             ->line('Se você não solicitou essa redefinição de senha, por favor, ignore este e-mail.');
     }
 

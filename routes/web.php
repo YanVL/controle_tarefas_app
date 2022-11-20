@@ -26,6 +26,4 @@ Route::resource('tarefa', App\Http\Controllers\TarefaController::class);
 
 Route::get('/mensagem-teste', function () {
     return new MensagemTesteMail();
-    //Mail::to('ycontroledtarefas@gmail.com')->send(new MensagemTesteMail());
-    //return 'E-mail enviado com sucesso';
 });
