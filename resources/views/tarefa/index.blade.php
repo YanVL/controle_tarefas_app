@@ -20,16 +20,21 @@
 
                             <tbody>
                                 @foreach ($tarefas as $key => $t)
-                                <tr>
-                                    <th scope="row">{{ $t['id']}}</th>
-                                    <td>{{ $t['tarefa']}}</td>
-                                    <td>{{ date('d/m/Y', strtotime($t['data_limite_conclusao'])) }} </td>
-                                </tr>
+                                    <tr>
+                                        <th scope="row">{{ $t['id'] }}</th>
+                                        <td>{{ $t['tarefa'] }}</td>
+                                        <td>{{ date('d/m/Y', strtotime($t['data_limite_conclusao'])) }} </td>
+                                    </tr>
                                 @endforeach
-                                
+
                             </tbody>
                         </table>
+
+                        <div class="justify-content-center">
+                            {{ $tarefas->links() }}
+                        </div>
                     </div>
+
                 </div>
             </div>
         </div>
