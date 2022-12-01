@@ -6,9 +6,10 @@
                 <h1>Bem vindo ao aplicativo Controle de Tarefas!</h1>
                 <h5>Monitore e registre suas tarefas agora mesmo com o nosso sistema criado em laravel.</h5>
                 <p>Nosso app utiliza o motor blade no front-end e criptografia nativa laravel.</p>
+                <p>Receba um e-mail confirmando que a tarefa foi cadastrada.</p>
             </div>
-            <div class="col-md-4">
-                <img src="{{ asset('img/logo.png') }}" alt="logo" width="290px">
+            <div class="col-md-4 d-none d-md-block">
+                <img src="{{ asset('img/logo.png') }}" class="img-fluid" alt="logo">
             </div>
         </div>
         <div class="container">
